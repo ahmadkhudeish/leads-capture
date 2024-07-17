@@ -59,24 +59,24 @@ npm run test:e2e
 
 ```sh
 project_root/
-├── e2e/
-│   └── leadCaptureForm.spec.ts         # End-to-end tests
-├── src/
-│   └── components/
-│       └── LeadCaptureForm.tsx         # Lead capture form component
-│   └── hooks/
-│       └── useLeadCaptureForm.ts       # Formik hook for form handling and validation
-│   └── schemas/
-│       └── leadSchema.ts               # Yup validation schema
-│   └── services/
-│       └── leads.ts                    # API service for lead capture
-│   └── utils/
-│       └── apiBase.ts                  # Base API utility
-├── tests/
-│   └── sanitizeLeadsData.test.ts       # Unit tests
-├── jest.config.js                      # Jest configuration
-├── playwright.config.ts                # Playwright configuration
-├── package.json                        # npm scripts and dependencies
-├── README.md                           # Project documentation
-└── tsconfig.json                       # TypeScript configuration
+├── app/                                # Application source files
+│   ├── api/                            # API route handlers
+│   │   └── leads/
+│   │       ├── model.ts                # Lead model definition
+│   │       ├── route.ts                # API route handler for lead capture
+│   │       ├── sanitizations.test.ts   # Unit tests for data sanitization
+│   │       ├── sanitizations.ts        # Data sanitization functions
+│   │       └── validations.ts          # Data validation schema (Yup)
+│   ├── components/                     # React components
+│   │   └── LeadCaptureForm.tsx         # Lead capture form component
+│   ├── hooks/                          # Custom React hooks
+│   │   └── useLeadCaptureForm.ts       # Hook for form handling and validation
+│   ├── services/                       # Service files for API calls
+│   │   └── leads.ts                    # Service for lead capture API calls
+│   ├── utils/                          # Utility files
+│   │   └── apiBase.ts                  # Base API utility for HTTP requests
+│   ├── layout.tsx                      # Layout component
+│   └── page.tsx                        # Main page component
+├── e2e/                                # End-to-end tests
+│   └── leadCaptureForm.spec.ts         # Playwright tests for the lead capture form
 ```
