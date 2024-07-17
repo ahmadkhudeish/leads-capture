@@ -43,19 +43,13 @@ npm run dev
 5. Running the Tests
    This project uses Jest for unit tests and Playwright for end-to-end tests.
 
-- Running Unit Tests with jes
+- Running Unit Tests with jest, please use the following command
 
 ```sh
 npm test
 ```
 
-- Running End-to-End Tests with Playwright - Make sure the development server is running:
-
-```sh
-npm run dev
-```
-
-- In a separate terminal, run the Playwright tests:
+- Running end-to-end test using Playwright, please use the following command:
 
 ```sh
 npm run test:e2e
