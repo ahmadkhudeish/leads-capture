@@ -24,7 +24,7 @@ git clone https://github.com/ahmadkhudeish/leads-capture.git
 2. Change into the project directory
 
 ```sh
-cd project_files/lead_capture_frontend_web
+cd docs/project_files/lead_capture_frontend_web
 ```
 
 3. Install npm packages
