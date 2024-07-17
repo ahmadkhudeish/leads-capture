@@ -1,4 +1,4 @@
-# Lead Capture Form Project
+# Lead Capture Proposal
 
 This project is a lead capture form built using Next.js and Formik for form handling and validation, with Playwright for end-to-end testing and Jest for unit testing.
 
@@ -59,4 +59,30 @@ npm run dev
 
 ```sh
 npm run test:e2e
+```
+
+## Project structure
+
+```sh
+project_root/
+├── e2e/
+│   └── leadCaptureForm.spec.ts         # End-to-end tests
+├── src/
+│   └── components/
+│       └── LeadCaptureForm.tsx         # Lead capture form component
+│   └── hooks/
+│       └── useLeadCaptureForm.ts       # Formik hook for form handling and validation
+│   └── schemas/
+│       └── leadSchema.ts               # Yup validation schema
+│   └── services/
+│       └── leads.ts                    # API service for lead capture
+│   └── utils/
+│       └── apiBase.ts                  # Base API utility
+├── tests/
+│   └── sanitizeLeadsData.test.ts       # Unit tests
+├── jest.config.js                      # Jest configuration
+├── playwright.config.ts                # Playwright configuration
+├── package.json                        # npm scripts and dependencies
+├── README.md                           # Project documentation
+└── tsconfig.json                       # TypeScript configuration
 ```
